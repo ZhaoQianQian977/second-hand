@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/user/index",
+    "pages/cart/index",
+    "pages/search/index",
+    "pages/goods_detail/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "校园二手",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#E1251B",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index_1.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "需求专区",
+        "iconPath": "icon/app.png",
+        "selectedIconPath": "icon/app_1.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "收藏",
+        "iconPath": "icon/cart.png",
+        "selectedIconPath": "icon/cart_1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icon/user.png",
+        "selectedIconPath": "icon/user_1.png"
+      }
+    ]
+  }
+}
