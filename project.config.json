@@ -47,6 +47,13 @@
 					"id": -1,
 					"name": "需求",
 					"pathName": "pages/demand/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "需求表单",
+					"pathName": "pages/demand_detail/index",
 					"scene": null
 				}
 			]

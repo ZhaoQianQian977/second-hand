@@ -1,18 +1,36 @@
 // miniprogram/pages/category/index.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goods:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    db.collection('goods').limit(10).orderBy('time','desc').get()
+      .then(res => {
+        // console.log(res)
+        this.setData({
+          goods: res.data
+        })
+      })
+    // db.collection('goods').watch({
+    //   onChange:res=>{
+    //     let data=this.data.goods
+    //     console.log('res',res)
+    //     data=data.push(res)
+    //     this.setData({
+    //       goods:data
+    //     })
+    //     // console.log(this.data.goods)
+    //   }
+    // })
   },
 
   /**
@@ -26,7 +44,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

@@ -1,2 +1,45 @@
-<!--miniprogram/pages/demand_detail/index.wxml-->
-<text>miniprogram/pages/demand_detail/index.wxml</text>
+<view class="container">
+	<form class="form" bindsubmit="btnSub">
+		<input name='name' class="title" placeholder="请输入主题"></input>
+		<textarea name='desc' class="desc'" placeholder="请输入描述"></textarea>
+		<radio-group name="tabs" class='radio'>
+			<label>
+				<radio value="1" />手机数码</label>
+			<label>
+				<radio value="2" />运动休闲</label>
+        <label>
+				<radio value="3" />生活用品</label>
+        <label>
+				<radio value="4" />书籍资料</label>
+        <label>
+				<radio value="5" />其他</label>
+        
+		</radio-group>
+
+		<view class="price-box">
+			<text class="iconfont icon-money-5 price" >价格</text>
+			<input name='price' class="priceNum" placeholder="请输入价格"></input>元
+		</view>
+		
+    <view class='pages'>
+ <view class='top'><text class='top_name'>商品图片：</text></view>
+ <!-- 图片 -->
+ <view class="images_box">
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+   <view class='img-box'>
+    <image class='img' src='{{item}}'></image>
+    <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+     <image class='img' src='../../icon/delete1.png' style="display:{{hide}}"></image>  
+    </view>
+   </view>
+  </block>
+  <view class='img-box' bindtap='addPic1' wx:if="{{hide!='none'}}">
+   <image class='img' src='../../images/add_image.png' ></image>  
+  </view>
+ </view>
+ <button bindtap='fb' class="btn" >确认上传图片</button>
+ <button bindtap='fb' class="btn" form-type="submit">提交</button>
+
+</view>
+	</form>
+</view>

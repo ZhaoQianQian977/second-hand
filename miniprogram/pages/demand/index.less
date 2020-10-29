@@ -16,4 +16,71 @@ page{
         line-height: 80rpx;
         text-align: center;
     }
-}
+
+
+    .index_cate {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -2rpx;
+        height: 190rpx;
+        text-align: center;
+        padding-left: 20rpx;
+        background-color: rgba(155, 190, 218, 0.4);
+    
+        .box {
+            align-items:center;
+            justify-content: center;
+            width: 100rpx;
+            height: 80rpx;
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            padding: 20rpx;
+            font-size: 12px;
+    
+            image {
+                border-radius: 50%;
+                width: 120rpx;
+                height: 120rpx;
+            }
+            .title{
+                margin-bottom: 0rpx;
+            }
+        }
+    }
+    
+    .goods-box{
+        .goods{
+            padding: 20rpx;
+            display: flex;
+            // border-bottom: 1px solid rgb(73, 72, 72);
+            background-color: rgba(155, 190, 218, 0.4);
+            box-shadow: 2rpx 2rpx 2rpx #ccc;
+            margin-top: 10rpx;
+            image{
+                flex: 1;
+                width: 100%;
+            }
+            .goods-content{
+                flex: 3;
+                padding: 10rpx;
+                .goods-name{
+                    font-size: 16px;
+                    margin: 5rpx;
+                    font-weight: 600;
+    
+                }
+                .goods-desc{
+                    font-size: 14px;
+                }
+                .goods-price{
+                    font-size: 12px;
+                }
+            }
+        }
+        
+    }
+    .head{
+        margin-top: 20rpx;
+        margin-left: 30rpx;
+    }}

@@ -15,11 +15,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
     wx.cloud.callFunction({
       name: "getDate",
-      data:{
-        name:'banner'
+      data: {
+        name: 'banner'
       }
     }).then(res => {
       this.setData({
@@ -28,8 +28,8 @@ Page({
     })
     wx.cloud.callFunction({
       name: "getDate",
-      data:{
-        name:'tabs'
+      data: {
+        name: 'tabs'
       }
     }).then(res => {
       this.setData({
@@ -37,10 +37,9 @@ Page({
       })
     })
     wx.cloud.callFunction({
-      name: "getDate",
-      data:{
-        name:'goods',
-        condition:{hot: _.eq(true)}
+      name: "getNewDate",
+      data: {
+        name: 'goods'
       }
     }).then(res => {
       this.setData({

@@ -38,12 +38,7 @@
         "iconPath": "icon/app.png",
         "selectedIconPath": "icon/app_1.png"
       },
-      {
-        "pagePath": "pages/cart/index",
-        "text": "收藏",
-        "iconPath": "icon/cart.png",
-        "selectedIconPath": "icon/cart_1.png"
-      },
+      
       {
         "pagePath": "pages/user/index",
         "text": "我的",

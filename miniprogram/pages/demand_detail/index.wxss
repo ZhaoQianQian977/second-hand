@@ -1,1 +1,90 @@
-/* miniprogram/pages/demand_detail/index.wxss */
+.container {
+  padding: 40rpx;
+  /* 删除图片 */
+}
+.container .title,
+.container .desc {
+  width: 100%;
+  height: 80rpx;
+}
+.container .desc {
+  height: 180rpx;
+}
+.container .price-box {
+  margin-top: 20rpx;
+  display: flex;
+}
+.container .price-box .price {
+  flex: 3;
+}
+.container .price-box .priceNum {
+  width: 200rpx;
+  flex: 1;
+}
+.container .btn {
+  background-color: #e7df64;
+  width: 100%;
+  color: aliceblue;
+  margin-left: 0;
+  margin-top: 30rpx;
+}
+.container .radio {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .radio label {
+  margin: 20rpx;
+}
+.container .images_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+}
+.container .img-box {
+  border: 5rpx;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.452);
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.container .img-delect {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+}
+.container .img {
+  width: 100%;
+  height: 100%;
+}
+.container .jiage {
+  height: 60rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .rmb {
+  width: 280rpx;
+  border: 2rpx solid #c7c5c5;
+}
+.container button {
+  margin-top: 20rpx;
+  background-color: green;
+}
+.container .radio-group {
+  display: flex;
+}

@@ -1,6 +1,18 @@
 <!--pages/category/index.wxml-->
 <view class="demand">
-  <view class="need_btn">
-        <navigator url="/pages/demand_detail/index" >发布需求</navigator>
-    </view>
+	<view class="need_btn">
+		<navigator url="/pages/demand_detail/index">发布需求</navigator>
+	</view>
+	<view class="head">热门推荐</view>
+	<view wx:for="{{goods}}" class="goods-box">
+		<navigator class="goods" url="/pages/goods_detail/index?goods_id={{item.id}}">
+			<image mode="widthFix" src="{{item.image[0]}}"></image>
+			<view class="goods-content">
+				<view class="goods-name">{{item.name}}</view>
+
+				<view class="goods-desc">{{item.desc}}</view>
+				<view class="goods-price">￥{{item.price}}元</view>
+			</view>
+		</navigator>
+	</view>
 </view>

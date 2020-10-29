@@ -10,8 +10,8 @@
 		</swiper>
 	</view>
 	<view class="index_cate">
-		<navigator url="/pages/category/index" open-type="switchTab" wx:for="{{tabs}}" wx:key="name">
-			<view class="box">
+		<navigator open-type="switchTab" wx:for="{{tabs}}" wx:key="name" class="box">
+			<view >
 				<image mode="widthFix" src="{{item.src}}"></image>
 				<view class="title">{{item.title}}</view>
 			</view>

@@ -15,3 +15,61 @@ page {
   line-height: 80rpx;
   text-align: center;
 }
+.demand .index_cate {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -2rpx;
+  height: 190rpx;
+  text-align: center;
+  padding-left: 20rpx;
+  background-color: rgba(155, 190, 218, 0.4);
+}
+.demand .index_cate .box {
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  height: 80rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 20rpx;
+  font-size: 12px;
+}
+.demand .index_cate .box image {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+}
+.demand .index_cate .box .title {
+  margin-bottom: 0rpx;
+}
+.demand .goods-box .goods {
+  padding: 20rpx;
+  display: flex;
+  background-color: rgba(155, 190, 218, 0.4);
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+  margin-top: 10rpx;
+}
+.demand .goods-box .goods image {
+  flex: 1;
+  width: 100%;
+}
+.demand .goods-box .goods .goods-content {
+  flex: 3;
+  padding: 10rpx;
+}
+.demand .goods-box .goods .goods-content .goods-name {
+  font-size: 16px;
+  margin: 5rpx;
+  font-weight: 600;
+}
+.demand .goods-box .goods .goods-content .goods-desc {
+  font-size: 14px;
+}
+.demand .goods-box .goods .goods-content .goods-price {
+  font-size: 12px;
+}
+.demand .head {
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
