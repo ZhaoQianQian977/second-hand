@@ -1,4 +1,4 @@
-// pages/user/user.js
+// miniprogram/pages/demand_detail/index.js
 Page({
 
   /**

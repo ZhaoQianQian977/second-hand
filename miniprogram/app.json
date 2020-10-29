@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/index",
+    "pages/demand/index",
     "pages/cart/cart",
-    "pages/user/user",
     "pages/user/index",
     "pages/cart/index",
     "pages/search/index",
-    "pages/goods_detail/index"
+    "pages/goods_detail/index",
+    "pages/login/index",
+    "pages/demand_detail/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -32,7 +33,7 @@
         "selectedIconPath": "icon/index_1.png"
       },
       {
-        "pagePath": "pages/category/index",
+        "pagePath": "pages/demand/index",
         "text": "需求专区",
         "iconPath": "icon/app.png",
         "selectedIconPath": "icon/app_1.png"
