@@ -1,0 +1,26 @@
+.goods-box .goods {
+  padding: 20rpx;
+  display: flex;
+  background-color: rgba(155, 190, 218, 0.4);
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+  margin-top: 10rpx;
+}
+.goods-box .goods image {
+  flex: 1;
+  width: 100%;
+}
+.goods-box .goods .goods-content {
+  flex: 3;
+  padding: 10rpx;
+}
+.goods-box .goods .goods-content .goods-name {
+  font-size: 16px;
+  margin: 5rpx;
+  font-weight: 600;
+}
+.goods-box .goods .goods-content .goods-desc {
+  font-size: 14px;
+}
+.goods-box .goods .goods-content .goods-price {
+  font-size: 12px;
+}

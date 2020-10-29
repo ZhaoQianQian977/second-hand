@@ -13,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    db.collection('goods').limit(10).orderBy('time','desc').get()
+    db.collection('goods').orderBy('time','desc').get()
       .then(res => {
         // console.log(res)
         this.setData({

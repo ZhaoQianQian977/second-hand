@@ -1,5 +1,4 @@
 <view>
-	<SearchInput></SearchInput>
 	<view class="index-swiper">
 		<swiper indicator-dots autoplay circular interval="3000" indicator-active-color="#E1251B">
 			<swiper-item wx:for="{{banner}}" wx:key="goods_id">
@@ -10,7 +9,7 @@
 		</swiper>
 	</view>
 	<view class="index_cate">
-		<navigator open-type="switchTab" wx:for="{{tabs}}" wx:key="name" class="box">
+		<navigator  url="/pages/tabs/index?tabs_id={{item.tabId}}"  wx:for="{{tabs}}" wx:key="name" class="box">
 			<view >
 				<image mode="widthFix" src="{{item.src}}"></image>
 				<view class="title">{{item.title}}</view>
@@ -19,7 +18,7 @@
 	</view>
 	<view class="head">热门推荐</view>
 	<view wx:for="{{goods}}" class="goods-box">
-		<navigator  class="goods" url="/pages/goods_detail/index?goods_id={{item.id}}"> 
+		<navigator  class="goods" url="/pages/goods_detail/index?goods_id={{item._id}}"> 
 			<image mode="widthFix" src="{{item.image[0]}}"></image>
       <view class="goods-content">
       	<view class="goods-name">{{item.name}}</view>

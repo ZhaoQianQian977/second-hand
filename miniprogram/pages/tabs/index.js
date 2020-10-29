@@ -1,4 +1,5 @@
-// miniprogram/pages/cart/index.js
+// miniprogram/pages/tabs/index.js
+const db=wx.cloud.database()
 Page({
 
   /**
@@ -26,9 +27,36 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let pages= getCurrentPages();
+    let currentPage=pages[pages.length-1];
+    let options=currentPage.options;
+    const {tabs_id}=options;
+    db.collection('tabs').get()
+    .then(res=>{
+      console.log(res)
+      res.data.map(item=>{
+        if(item.tabId==tabs_id){
+          this.setData({
+            title:item.title
+          })
+        }
+      })
+      
+    })
+    this.getTabsDetail(tabs_id);
+   
   },
-
+  getTabsDetail(id){
+    db.collection('goods').where({
+      tabs:id
+    }).get()
+    .then(res=>{
+      // console.log(res)
+      this.setData({
+        goods:res.data
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
